@@ -1,23 +1,24 @@
 ---
 layout: default
+title: Lauren Hastings
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="container-fluid">
+  <center>
+    <div class="jumbotron">
+      <h1>LAUREN HASTINGS</h1>
+      <p>Student. Intern.</p>
+      <p>Aspiring software engineer.</p>
+    </div>
+    <a href="#about" role="button" aria-label="Scroll down to content" data-scroll>
+      <span class="glyphicon glyphicon-menu-down"></span>
+    </a>
+  </center>
+</div>
+<div id="about" class="header jumbotron dark-blue">
+  <center><h1>ABOUT</h1></center>
+</div>
+<div class="container">
+  <p>
+    Hi! My name is Lauren Hastings. I'm an undergraduate student at the University of Central Florida in Orlando studying computer science and mathematics (my degree is technically called Computational Applied Math).
+  </p>
 </div>

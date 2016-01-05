@@ -1,2 +1,1 @@
-# hastingsl.github.io
-My personal professional website and blog.
+# My personal professional website and blog.
