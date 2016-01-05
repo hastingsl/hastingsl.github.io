@@ -1,0 +1,72 @@
+body {
+  background-color: #333;
+}
+
+.container {
+  color: #eee;
+  font-size: 1.4em;
+  max-width: 768px;
+}
+
+.container-fluid {
+  height: 100vh;
+  z-index: 0;
+}
+
+.container-fluid a {
+  background: transparent;
+  bottom: 0;
+  color: #fff;
+  font-size: 2em;
+  left: 0;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.container-fluid a:hover {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+/*TODO: Change to transparent background after adding colored tiles*/
+/*background-color: rgba(238,238,238, 0.5);*/
+.container-fluid .jumbotron {
+  background-color: #eee;
+  margin-top: 20vh;
+  max-width: 768px;
+  z-index: 1;
+}
+
+.container-fluid .jumbotron h1 {
+  font-size: 4.3em;
+}
+
+.container-fluid .jumbotron p {
+  font-size: 1.9em;
+}
+
+.dark-blue {
+  background-color: #337ab7;
+}
+
+.header {
+  color: #fff;
+  margin-top: 50px;
+}
+
+img {
+  margin-right: 15px;
+}
+
+.orange {
+  background-color: #f0ad4e;
+}
+
+.orange-text {
+  color: #f0ad4e;
+}
+
+.orange-text:hover {
+  color: #f0ad4e;
+}
