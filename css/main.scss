@@ -1,53 +1,213 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
 
+$dark-blue:  #337ab7;
+$dark-gray: #333;
+$gray: #eee;
+$green: #5cb85c;
+$narrow: 768px;
+$orange: #f0ad4e;
+$red: #d9534f;
+$transition: background-color 1s;
+$white: #fff;
 
-
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+#about {
+  background-color: $dark-blue;
 }
 
+.blue-link a {
+  color: $dark-blue;
+}
 
+.blue-link a:hover {
+  color: $dark-blue;
+}
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+body {
+  background-color: $dark-gray;
+  color: $white;
+  font-size: 1.9em;
+  padding-bottom: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+#contact {
+  background-color: $green;
+}
+
+.container {
+  color: #eee;
+  max-width: $narrow;
+}
+
+.container-fluid .jumbotron {
+  border-radius: 0px;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  color: $white;
+}
+
+.footer a {
+  color: $white;
+}
+
+.footer a:hover {
+  color: $green;
+}
+
+.footer-icons{
+  font-size: 7em;
+}
+
+.grid {
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+img {
+  margin-right: 15px;
+}
+
+.img-rounded {
+  border-radius: 4px;
+}
+
+.jumbotron {
+  color: $white;
+  margin-top: 50px;
+}
+
+.light {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#masthead {
+  height: 100vh;
+  position: relative;
+  z-index: 3;
+}
+
+#masthead a {
+  background: transparent;
+  bottom: 0;
+  color: $white;
+  font-size: 2em;
+  left: 0;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#masthead a:hover {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+#masthead .jumbotron {
+  background-color: rgba(238, 238, 238, 0.7);
+  border-radius: 4px;
+  color: $dark-gray;
+  margin-top: 20vh;
+  max-width: $narrow;
+}
+
+#masthead .jumbotron h1 {
+  font-size: 4em;
+}
+
+#masthead .jumbotron p {
+  font-size: 1.6em;
+}
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.navbar-default {
+  background-color: $gray;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: $dark-gray;
+}
+
+.navbar-default .navbar-nav>li>.hover-blue:hover {
+  color: $dark-blue;
+}
+
+.navbar-default .navbar-nav>li>.hover-green:hover {
+  color: $green;
+}
+
+.navbar-default .navbar-nav>li>.hover-orange:hover {
+  color: $orange;
+}
+
+.navbar-default .navbar-nav>li>.hover-red:hover {
+  color: $red;
+}
+
+.navbar-toggle {
+  border-radius: 0;
+}
+
+.orange-link a {
+  color: $orange;
+}
+
+.orange-link a:hover {
+  color: $orange;
+}
+
+#overlay-grid {
+  z-index: -1;
+}
+
+.overlay-tile {
+  transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+}
+
+#projects {
+  background-color: $orange;
+}
+
+.tile {
+  border: solid $white;
+  border-bottom: 0px;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-right: 0px;
+  float: left;
+  height: 10vh;
+  position: relative;
+  width: 10%;
+}
+
+#tile-grid {
+  z-index: -2;
+}
+
+ul {
+  width: 100%;
+}
+
+ul li {
+  width: 25%;
+  text-align: center;
+}

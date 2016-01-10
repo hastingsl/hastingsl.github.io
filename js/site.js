@@ -1,5 +1,7 @@
-/*Miscellaneous JavaScript for the main personal page. See tile_animation file
-for the JavaScript for the flashing tile animation at the top of the page.*/
+/*
+  Miscellaneous JavaScript for the main personal page. See tile.js file for the
+  JavaScript for the flashing tiles in the main page masthead.
+*/
 
 $(function() {
   // Smooth scroll:

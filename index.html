@@ -1,11 +1,11 @@
 ---
-css: site
+css: main
 layout: default
 title: Lauren Hastings
 ---
 <div class="container-fluid">
-  <div class="row splash" id="splash">
-    <div class="overlay">
+  <div class="row" id="masthead">
+    <div>
       <center>
         <div class="jumbotron">
             <h1>Lauren Hastings</h1>
@@ -13,63 +13,98 @@ title: Lauren Hastings
         </div>
       </center>
     </div>
-    <div class="grid" id="overlay-grid"></div>
-    <div class="grid" id="tile-holder"></div>
-    <a aria-label="Scroll down to content" data-scroll href="#about" role="button">
+    <div class="grid" id="overlay-grid">
+      {% for i in (0..99) %}
+        <div class="overlay-tile tile" id="overlay-{{ i }}"></div>
+      {% endfor %}
+    </div>
+    <div class="grid" id="tile-grid">
+      {% for i in (0..99) %}
+        <div class="tile" id="tile-{{ i }}"></div>
+      {% endfor %}
+    </div>
+    <a href="#nav">
       <center><span class="glyphicon glyphicon-menu-down"></span></center>
     </a>
   </div>
   <div class="row">
-    <div class="header jumbotron dark-blue" id="about">
+    <nav class="navbar navbar-default" id="nav">
+      <div class="container">
+        <div class="navbar-header">
+          <button aria-expanded="false" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#navigation" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="nav navbar-nav">
+            <li><a class="hover-blue" href="#about">About</a></li>
+            <li><a class="hover-orange" href="#projects">Projects</a></li>
+            <li><a class="hover-green" href="#contact">Contact</a></li>
+            <li><a class="hover-red" href="files/resume.pdf" target="_blank">Resume</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="row">
+    <div class="header jumbotron" id="about">
       <center><h1>About</h1></center>
     </div>
-    <div class="about container">
+    <div class="blue-link container">
+      <img align="left" class="img-rounded" height="300" src="files/lauren.jpg">
       <p>
-        <img align="left" alt="Me" class="img-circle" height="300px" src="files/lauren.jpg">
         Hi! My name is Lauren Hastings. I'm a sophomore at the University of Central Florida in Orlando studying computer science and math (the official, fancier name of my degree is Computational Applied Mathematics). This semester I'll be starting undergraduate research into computational humor, something new and interesting!
       </p>
       <p>
-        I'll be interning with Apple in Cupertino, California this summer as a software developer intern, and I couldn't be more excited! I started my move out west last summer by interning with Intel in Chandler, Arizona. I worked in design automation with Perl, a fun departure from my previous experience in web development.
+        I'll be interning with Apple in Cupertino, California this summer working with back-end web technologies for the Apple TV QA team. I started my move out west last summer by interning with Intel in Chandler, Arizona. I worked in design automation with Perl, a fun departure from my previous experience in front-end web development.
       </p>
       <p>
-        Like any programmer, I don't like repeating myself, so all you'll find on this site is what you can't find on my <a alt="Resume" href="files/resume-lauren-hastings.pdf" target="_blank">resume</a> (a succinct list of important information) and my <a alt="Linkedin" href="https://www.linkedin.com/in/hastingsl" target="_blank">Linkedin</a> (everything worth knowing about me, professionally, at least). Scroll down to see a list of featured projects from my <a alt="GitHub" href="https://www.github.com/hastingsl" target="_blank">GitHub</a> or check out my <a alt="Blog" href="blog" target="_blank">blog</a>.
+        Like any programmer, I don't like repeating myself, so all you'll find on this site is what you can't find on my <a href="files/resume.pdf" target="_blank">resume</a> (a succinct professional summary) and my <a href="https://www.linkedin.com/in/hastingsl" target="_blank">Linkedin</a> (everything worth knowing about me, professionally, at least). Scroll down to see a list of featured projects from my <a href="https://www.github.com/hastingsl" target="_blank">GitHub</a> and how to contact me.
       </p>
       <p>
         Feel free to email me or add me on Linkedin if you'd like to connect or know of any student opportunities. I'd love to start doing pro-bono technical projects and consulting for non-profits, so if you know anyone who needs help or your organization would like assistance, don't hesitate to contact me!
       </p>
     </div>
   </div>
-  <div class="row">
-    <div class="header jumbotron orange" id="projects">
+  <div class="row orange-link">
+    <div class="header jumbotron" id="projects">
       <center><h1>Projects</h1></center>
     </div>
     <div class="container">
       <div class="row">
-        This is where I'll post upcoming, in progress and completed personal projects I work on to learn new languages and frameworks. You can find the source code on <a alt="GitHub" class="orange-text" href="https://www.github.com/hastingsl" target="_blank">GitHub</a>. For a complete list of all completed projects, personal and professional, see my <a alt="Linkedin" class="orange-text" href="https://www.linkedin.com/in/hastingsl" target="_blank">Linkedin</a>.
+        <p>
+          This is where I'll post upcoming, in progress and completed personal projects I work on to learn new languages and frameworks. It's currently rather sparse, but rest assured, I intend to add more projects in the future. You can find all of my source code on <a href="https://www.github.com/hastingsl" target="_blank">GitHub</a>. For a complete list of all completed projects, personal and professional, see my <a href="https://www.linkedin.com/in/hastingsl" target="_blank">Linkedin</a>.
+        </p>
       </div>
       <hr/>
       <div class="row">
         <h2>
-          <a alt="My Personal Site" class="orange-text" href="https://www.github.com/hastingsl/hastingsl.github.io" target="_blank" >My Personal Site</a> <small>in progress</small>
+          <a href="https://www.github.com/hastingsl/hastingsl.github.io" target="_blank" >My Personal Site</a> <small>in progress</small>
         </h2>
         <p>
-          This website! I built this from scratch with HTML, CSS, JavaScript, jQuery and Bootstrap. The project is hosted on Github using Jekyll for Github pages.
+          This website! I built this from scratch using HTML, CSS, JavaScript, jQuery and the Bootstrap library. I also learned to use Jekyll, the CSS pre-processor Sass, Liquid templates, and Markdown for this project.
         </p>
       </div>
       <hr/>
     </div>
   </div>
   <div class="row">
-    <div class="header jumbotron green" id="contact">
+    <div class="header jumbotron" id="contact">
       <center><h1>Contact</h1></center>
     </div>
     <center class="footer">
       <div class="footer-icons">
-        <a alt="GitHub" href="https://www.github.com/hastingsl/hastingsl.github.io" target="_blank"><i class="fa fa-github"></i></a>
-        <a alt="Linkedin" href="https://www.linkedin.com/in/hastingsl" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+        <a href="https://www.github.com/hastingsl/hastingsl.github.io" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/hastingsl" target="_blank"><i class="fa fa-linkedin-square"></i></a>
       </div>
       <br/>
       <i class="fa fa-envelope"></i> lhastingsa@gmail.com
+      <br/>
+      <hr/>
+      <a href="#masthead">Back to top</a>
     </center>
   </div>
 </div>
