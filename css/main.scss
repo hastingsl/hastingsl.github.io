@@ -1,7 +1,7 @@
 ---
 ---
 
-$dark-blue:  #337ab7;
+$dark-blue: #337ab7;
 $dark-gray: #333;
 $gray: #eee;
 $green: #5cb85c;
@@ -11,24 +11,22 @@ $red: #d9534f;
 $transition: background-color 1s;
 $white: #fff;
 
-#about {
-  background-color: $dark-blue;
-}
-
-.blue-link a {
-  color: $dark-blue;
-}
-
-.blue-link a:hover {
+.blue-link a, .blue-link a:hover {
   color: $dark-blue;
 }
 
 body {
-  background-color: $dark-gray;
-  color: $white;
   font-size: 21px;
   padding-bottom: 20px;
-  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+body, .footer, .footer a, .jumbotron, .link-icons, .link-icons a, #masthead a {
+  color: $white;
+}
+
+body, .jumbotron {
+  background-color: $dark-gray;
 }
 
 .center {
@@ -53,19 +51,11 @@ body {
 }
 
 .footer {
-  color: $white;
+  margin-top: 50px;
 }
 
-.footer a {
-  color: $white;
-}
-
-.footer a:hover {
+.green:hover {
   color: $green;
-}
-
-.footer-icons{
-  font-size: 7em;
 }
 
 .grid {
@@ -83,13 +73,12 @@ img {
   border-radius: 4px;
 }
 
-.jumbotron {
-  color: $white;
-  margin-top: 50px;
-}
-
 .light {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.link-icons {
+  font-size: 7em;
 }
 
 #masthead {
@@ -101,7 +90,6 @@ img {
 #masthead a {
   background: transparent;
   bottom: 0;
-  color: $white;
   font-size: 1.3em;
   left: 0;
   padding: 5px;
@@ -132,44 +120,7 @@ img {
   font-size: 35px;
 }
 
-.navbar {
-  border-radius: 0;
-  margin-bottom: 0;
-}
-
-.navbar-default {
-  background-color: $gray;
-}
-
-.navbar-default .navbar-nav>li>a {
-  color: $dark-gray;
-}
-
-.navbar-default .navbar-nav>li>.hover-blue:hover {
-  color: $dark-blue;
-}
-
-.navbar-default .navbar-nav>li>.hover-green:hover {
-  color: $green;
-}
-
-.navbar-default .navbar-nav>li>.hover-orange:hover {
-  color: $orange;
-}
-
-.navbar-default .navbar-nav>li>.hover-red:hover {
-  color: $red;
-}
-
-.navbar-toggle {
-  border-radius: 0;
-}
-
-.orange-link a {
-  color: $orange;
-}
-
-.orange-link a:hover {
+.orange:hover {
   color: $orange;
 }
 
@@ -185,8 +136,8 @@ img {
   -webkit-transition: $transition;
 }
 
-#projects {
-  background-color: $orange;
+.red:hover {
+  color: $red;
 }
 
 .tile {
@@ -203,13 +154,4 @@ img {
 
 #tile-grid {
   z-index: -2;
-}
-
-ul {
-  width: 100%;
-}
-
-ul li {
-  width: 25%;
-  text-align: center;
 }
