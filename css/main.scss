@@ -1,6 +1,7 @@
 ---
 ---
 
+$blue: #5bc0de;
 $dark-blue: #337ab7;
 $dark-gray: #333;
 $gray: #eee;
@@ -10,6 +11,11 @@ $orange: #f0ad4e;
 $red: #d9534f;
 $transition: background-color 1s;
 $white: #fff;
+
+#about {
+  background-color: $dark-blue;
+  vertical-align: middle;
+}
 
 .blue-link a, .blue-link a:hover {
   color: $dark-blue;
@@ -84,6 +90,7 @@ img {
 
 #masthead {
   height: 100vh;
+  margin-bottom: 30px;
   position: relative;
   z-index: 3;
 }

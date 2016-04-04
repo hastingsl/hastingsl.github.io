@@ -1,4 +1,4 @@
-# My personal professional website and blog
+# My personal professional website
 
 I made this site from scratch using Jekyll, HTML, CSS, JavaScript, minimal jQuery and Bootstrap. Its also mobile friendly!
 

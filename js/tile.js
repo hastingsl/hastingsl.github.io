@@ -3,7 +3,7 @@
 $(function() {
 
   // Randomly assigns colors to tiles:
-  var colors = ["rgb(51, 122, 183)", "rgb(92, 184, 92)", "rgb(91, 192, 222)", "rgb(240, 173, 78)", "rgb(217, 83, 79)"];
+  var colors = ["#5bc0de", "#337ab7", "#5cb85c", "#f0ad4e", "#d9534f"];
   for(var i = 0; i < 100; i++)
     $("#tile-" + i).css("background-color", colors[getRandomNumber(colors.length)]);
 
