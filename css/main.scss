@@ -12,11 +12,6 @@ $red: #d9534f;
 $transition: background-color 1s;
 $white: #fff;
 
-#about {
-  background-color: $dark-blue;
-  vertical-align: middle;
-}
-
 .blue-link a, .blue-link a:hover {
   color: $dark-blue;
 }
@@ -78,6 +73,10 @@ img {
 
 .img-rounded {
   border-radius: 4px;
+}
+
+.jumbotron {
+  vertical-align: middle;
 }
 
 .light {
