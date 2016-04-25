@@ -12,6 +12,42 @@ $red: #d9534f;
 $transition: background-color 1s;
 $white: #fff;
 
+.blue {
+  background-color: $blue;
+}
+
+.dark-blue {
+  background-color: $dark-blue;
+}
+
+.green {
+  background-color: $green;
+}
+
+.orange {
+  background-color: $orange;
+}
+
+.red {
+  background-color: $red;
+}
+
+.green-text:hover {
+  color: lighten($green, 10%);
+}
+
+.orange-text:hover {
+  color: lighten($orange, 10%);
+}
+
+.red-text:hover {
+  color: lighten($red, 10%);
+}
+
+#about {
+  color: $blue;
+}
+
 .blue-link a, .blue-link a:hover {
   color: $dark-blue;
 }
@@ -22,7 +58,7 @@ body {
   font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
 }
 
-body, .footer, .footer a, .jumbotron, .link-icons, .link-icons a, #masthead a {
+body, .footer, .jumbotron, .link-icons, .link-icons a, #masthead a {
   color: $white;
 }
 
@@ -34,12 +70,8 @@ body, .jumbotron {
   text-align: center;
 }
 
-#contact {
-  background-color: $green;
-}
-
 .container {
-  color: #eee;
+  color: $gray;
   max-width: $narrow;
 }
 
@@ -55,7 +87,7 @@ body, .jumbotron {
   margin-top: 50px;
 }
 
-.green:hover {
+.green-text {
   color: $green;
 }
 
@@ -66,16 +98,8 @@ body, .jumbotron {
   top: 0;
 }
 
-img {
-  margin-right: 15px;
-  width: 30%;
-}
-
-.img-rounded {
-  border-radius: 4px;
-}
-
 .jumbotron {
+  color: $blue;
   vertical-align: middle;
 }
 
@@ -127,7 +151,7 @@ img {
   font-size: 35px;
 }
 
-.orange:hover {
+.orange-text {
   color: $orange;
 }
 
@@ -143,7 +167,7 @@ img {
   -webkit-transition: $transition;
 }
 
-.red:hover {
+.red-text {
   color: $red;
 }
 
