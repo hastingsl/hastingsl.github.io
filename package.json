@@ -1,0 +1,11 @@
+{
+  "name": "My Personal Site",
+  "version": "1.0.0",
+  "description": "My Personal Site package.json",
+
+  "standard": {
+    "globals": [
+      "$"
+    ]
+  }
+}

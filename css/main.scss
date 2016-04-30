@@ -12,39 +12,7 @@ $red: #d9534f;
 $transition: background-color 1s;
 $white: #fff;
 
-.blue {
-  background-color: $blue;
-}
-
-.dark-blue {
-  background-color: $dark-blue;
-}
-
-.green {
-  background-color: $green;
-}
-
-.orange {
-  background-color: $orange;
-}
-
-.red {
-  background-color: $red;
-}
-
-.green-text:hover {
-  color: lighten($green, 10%);
-}
-
-.orange-text:hover {
-  color: lighten($orange, 10%);
-}
-
-.red-text:hover {
-  color: lighten($red, 10%);
-}
-
-#about {
+#about, .jumbotron {
   color: $blue;
 }
 
@@ -58,7 +26,7 @@ body {
   font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
 }
 
-body, .footer, .jumbotron, .link-icons, .link-icons a, #masthead a {
+body, .footer, .link-icons, .link-icons a, #masthead a {
   color: $white;
 }
 
@@ -91,6 +59,10 @@ body, .jumbotron {
   color: $green;
 }
 
+.green-text:hover {
+  color: lighten($green, 10%);
+}
+
 .grid {
   height: 100vh;
   position: absolute;
@@ -99,7 +71,6 @@ body, .jumbotron {
 }
 
 .jumbotron {
-  color: $blue;
   vertical-align: middle;
 }
 
@@ -155,6 +126,10 @@ body, .jumbotron {
   color: $orange;
 }
 
+.orange-text:hover {
+  color: lighten($orange, 10%);
+}
+
 #overlay-grid {
   z-index: -1;
 }
@@ -169,6 +144,10 @@ body, .jumbotron {
 
 .red-text {
   color: $red;
+}
+
+.red-text:hover {
+  color: lighten($red, 10%);
 }
 
 .tile {
