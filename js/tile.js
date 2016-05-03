@@ -1,4 +1,4 @@
-// JavaScript responsible for main page flashing tiles
+// Main page flashing tiles
 $(function () {
   var colors = ['#5bc0de', '#337ab7', '#5cb85c', '#f0ad4e', '#d9534f']
   for (var i = 0; i < 100; i++) {
@@ -8,10 +8,10 @@ $(function () {
 })
 
 function animate () {
-  // Removes the lighten and darken classes on elements possessing these classes.
+  // Removes the lighten and darken classes on elements possessing these classes:
   remove('dark')
   remove('light')
-  // Darkens and lightens 20 tiles.
+  // Darkens and lightens 20 tiles at random:
   for (var i = 0; i < 10; i++) {
     changeColor('dark')
     changeColor('light')

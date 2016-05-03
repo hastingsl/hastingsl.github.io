@@ -13,14 +13,15 @@ title: Lauren Hastings
         </div>
       </center>
     </div>
-    <div class="grid" id="overlay-grid">
-      {% for i in (0..99) %}
-        <div class="overlay-tile tile" id="overlay-{{ i }}"></div>
-      {% endfor %}
-    </div>
+    <!-- Generates grid of solid tiles: -->
     <div class="grid" id="tile-grid">
       {% for i in (0..99) %}
         <div class="tile" id="tile-{{ i }}"></div>
+      {% endfor %}
+    <!-- Generates grid of transparent tiles for lightening/darkening effect: -->
+    </div><div class="grid" id="overlay-grid">
+      {% for i in (0..99) %}
+        <div class="overlay-tile tile" id="overlay-{{ i }}"></div>
       {% endfor %}
     </div>
     <a href="#about">
@@ -33,7 +34,7 @@ title: Lauren Hastings
     </div>
     <div class="blue-link container">
       <p>
-        I’m a sophomore at the <a href="https://www.ucf.edu" target="_blank"> University of Central Florida</a> in Orlando where I’m majoring in Computational Applied Mathematics and work part-time as a Teaching Assistant for an introductory C programming course. I intend to put my mathematical problem-solving and programming skills to use when I graduate by pursuing a career in Software Engineering. In my spare time, I’m learning Node.js and brushing up on Python and PHP in preparation for my internship at <a href="https://www.Apple.com" target="_blank"> Apple</a> this summer in Cupertino, California. I’ll be working with back-end web technologies for the Apple TV QA team, and I couldn’t be more excited!
+        I’m a sophomore at the <a href="https://www.ucf.edu" target="_blank"> University of Central Florida</a> in Orlando where I’m majoring in Computational Applied Mathematics and work part-time as a Teaching Assistant for an introductory C programming course. I intend to put my mathematical problem-solving and programming skills to use when I graduate by pursuing a career in Software Engineering. In my spare time, I’m learning Node.js and brushing up on other back-end web development technologies.
       </p>
       <p>
         I started my move out west last summer when I interned with <a href="http://www.intel.com/content/www/us/en/homepage.html" target="_blank">Intel</a> in Chandler, Arizona. I worked in Design Automation with Perl, a fun departure from my first internship at <a href="https://www.mitre.org" target="_blank">Mitre</a> where I primarily did front-end web development. I also spent a brief stint the spring of my freshman year in my university’s Information Security Office doing client-side web penetration testing and DevOps work. As you’ve probably gathered by now, I’ve dabbled in a lot of different things.
@@ -53,7 +54,7 @@ title: Lauren Hastings
       <div class="container link-icons">
         <center>
           <a href="http://hastingsl.github.io/files/resume.pdf" target="_blank"><i class="fa fa-file-o red-text"></i></a>
-          <a href="https://www.github.com/hastingsl/hastingsl.github.io" target="_blank"><i class="fa fa-github green-text"></i></a>
+          <a href="https://www.github.com/hastingsl" target="_blank"><i class="fa fa-github green-text"></i></a>
           <a href="https://www.linkedin.com/in/hastingsl" target="_blank"><i class="fa fa-linkedin-square orange-text"></i></a>
         </center>
       </div>
