@@ -3,67 +3,64 @@ css: main
 layout: default
 title: Lauren Hastings
 ---
-<div class="container-fluid">
-  <div class="row" id="masthead">
-    <div>
-      <center>
-        <div class="jumbotron">
-          <h1>Lauren Hastings</h1>
-          <p>UCF Student & Aspiring Software Engineer in Orlando, FL</p>
-        </div>
-      </center>
+<div class="container-fluid" id="masthead">
+  <center>
+    <div class="jumbotron">
+      <h1>Lauren Hastings</h1>
+      <p>UCF Student & Aspiring Software Engineer in Orlando, FL</p>
     </div>
-    <!-- Generates grid of solid tiles: -->
-    <div class="grid" id="tile-grid">
-      {% for i in (0..99) %}
-        <div class="tile" id="tile-{{ i }}"></div>
-      {% endfor %}
-    <!-- Generates grid of transparent tiles for lightening/darkening effect: -->
-    </div><div class="grid" id="overlay-grid">
-      {% for i in (0..99) %}
-        <div class="overlay-tile tile" id="overlay-{{ i }}"></div>
-      {% endfor %}
-    </div>
-    <a href="#about">
-      <center><span class="glyphicon glyphicon-menu-down"></span></center>
-    </a>
+  </center>
+  <!-- Generates grid of solid tiles: -->
+  <div class="grid" id="tile-grid">
+    {% for i in (0..99) %}
+      <div class="tile" id="tile-{{ i }}"></div>
+    {% endfor %}
   </div>
-  <div class="row">
-    <div class = "jumbotron" id="about">
-      <center><h1>Hi! I'm Lauren.</h1></center>
-    </div>
-    <div class="blue-link container">
-      <p>
-        I’m a sophomore at the <a href="https://www.ucf.edu" target="_blank"> University of Central Florida</a> in Orlando where I’m majoring in Computational Applied Mathematics and work part-time as a Teaching Assistant for an introductory C programming course. I intend to put my mathematical problem-solving and programming skills to use when I graduate by pursuing a career in Software Engineering. In my spare time, I’m learning Node.js and brushing up on other back-end web development technologies.
-      </p>
-      <p>
-        I started my move out west last summer when I interned with <a href="http://www.intel.com/content/www/us/en/homepage.html" target="_blank">Intel</a> in Chandler, Arizona. I worked in Design Automation with Perl, a fun departure from my first internship at <a href="https://www.mitre.org" target="_blank">Mitre</a> where I primarily did front-end web development. I also spent a brief stint the spring of my freshman year in my university’s Information Security Office doing client-side web penetration testing and DevOps work. As you’ve probably gathered by now, I’ve dabbled in a lot of different things.
-      </p>
-      <p>
-        Like any programmer, I don't like repeating myself, so instead of listing my accomplishments on this web page I'll simply re-direct you to my <a href="files/resume.pdf" target="_blank">resume</a>, <a href="https://www.linkedin.com/in/hastingsl" target="_blank">Linkedin</a>, and <a href="https://www.github.com/hastingsl" target="_blank">Github</a> (which I plan on fleshing out with projects whenever I find time between work and school).
-      </p>
-      <p>
-        Feel free to email me or add me on Linkedin if you'd like to connect!
-      </p>
-    </div>
+  <!-- Generates grid of transparent tiles for lightening/darkening effect: -->
+  <div class="grid" id="overlay-grid">
+    {% for i in (0..99) %}
+      <div class="overlay-tile tile" id="overlay-{{ i }}"></div>
+    {% endfor %}
   </div>
-  <div class="row">
-      <div class = "jumbotron">
-        <center><h1>To learn more, check out...</h1></center>
-      </div>
-      <div class="container link-icons">
-        <center>
-          <a href="http://hastingsl.github.io/files/resume.pdf" target="_blank"><i class="fa fa-file-o red-text"></i></a>
-          <a href="https://www.github.com/hastingsl" target="_blank"><i class="fa fa-github green-text"></i></a>
-          <a href="https://www.linkedin.com/in/hastingsl" target="_blank"><i class="fa fa-linkedin-square orange-text"></i></a>
-        </center>
-      </div>
-  </div>
-  <div class="row">
-    <center class="footer blue-link">
-      lhastingsa@gmail.com
-      <hr>
-      <a href="#masthead">Back to top</a>
-    </center>
-  </div>
+  <a href="#about"><center><span class="glyphicon glyphicon-menu-down"></span></center></a>
 </div>
+<div class="container">
+  <center id="about"><h1>Hi! I'm Lauren.</h1></center>
+  <figure>
+    <img src="files/me.jpg" class="img-responsive thumbnail" align="left">
+    <figcaption>
+      Me! Taken in my hometown of St. Petersburg, Florida.
+    </figcaption>
+  </figure>
+  <p>
+    I’m a sophomore at the <a href="https://www.ucf.edu" target="_blank"> University of Central Florida</a> in Orlando where I’m majoring in Computational Applied Mathematics and work part-time as a Teaching Assistant for an introductory C programming course. I intend to put my problem-solving skills to use when I graduate by pursuing a career in Software Engineering.
+  </p>
+  <p>
+    Last summer, I interned with <a href="http://www.intel.com/content/www/us/en/homepage.html" target="_blank">Intel</a> in Chandler, Arizona. I worked in Design Automation with Perl, a fun departure from my first internship at <a href="https://www.mitre.org" target="_blank">Mitre</a> where I primarily did front-end web development. I also spent a brief stint the spring of my freshman year in my university’s Information Security Office doing client-side web penetration testing and DevOps work. I like to dabble in different things.
+  </p>
+  <p>
+    When I'm not drowning in code and proofs, I like to read, binge-watch Netflix, cook and run. I'm also a proud board-game enthusiast, cinephile and foodie.
+  </p>
+  <p>
+    Like any programmer, I don't like repeating myself, so instead of listing my accomplishments on this web page I'll simply re-direct you to my <a href="files/resume.pdf" target="_blank">resume</a>, <a href="https://www.linkedin.com/in/hastingsl" target="_blank">Linkedin</a>, and <a href="https://www.github.com/hastingsl" target="_blank">Github</a> (which I plan on fleshing out with projects whenever I find time between work and school).
+  </p>
+  <p>
+    Feel free to email me or add me on Linkedin if you'd like to connect!
+  </p>
+  <center><h1>To learn more, check out:</h1></center>
+  <center class="link-icons">
+    <a href="http://hastingsl.github.io/files/resume.pdf" target="_blank"><i class="fa fa-file-o red-text"></i></a>
+    <a href="https://www.github.com/hastingsl" target="_blank"><i class="fa fa-github green-text"></i></a>
+    <a href="https://www.linkedin.com/in/hastingsl" target="_blank"><i class="fa fa-linkedin-square orange-text"></i></a>
+  </center>
+</div>
+<footer>
+  <center>
+    <p>lhastingsa@gmail.com</p>
+    <hr>
+    <p>
+      Made with HTML, CSS, JavaScript, <a href="https://jekyllrb.com" target="_blank">Jekyll</a>, <a href="https:getbootstrap.com" target="_blank">Bootstrap</a> and &#10084;.
+    </p>
+    <p><a href="#masthead">Show me the flashing tiles again!</a></p>
+  </center>
+</footer>

@@ -12,47 +12,55 @@ $red: #d9534f;
 $transition: background-color 1s;
 $white: #fff;
 
-#about, .jumbotron {
-  color: $blue;
-}
-
-.blue-link a, .blue-link a:hover {
-  color: $dark-blue;
-}
-
 body {
+  background-color: $dark-gray;
   font-size: 21px;
   padding-bottom: 20px;
   font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
 }
 
-body, .footer, .link-icons, .link-icons a, #masthead a {
+body, .container-fluid a, .link-icons, .link-icons a, {
   color: $white;
 }
 
-body, .jumbotron {
-  background-color: $dark-gray;
-}
-
-.center {
-  text-align: center;
-}
-
 .container {
-  color: $gray;
   max-width: $narrow;
 }
 
-.container-fluid .jumbotron {
-  border-radius: 0px;
+.container a, .container a:hover, footer a, footer a:hover {
+  color: $dark-blue;
+}
+
+.container h1 {
+  color: $blue;
+  font-size: 60px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.container-fluid {
+  height: 100vh;
+  z-index: 3;
+}
+
+.container-fluid a {
+  background: transparent;
+  bottom: 0;
+  font-size: 1.3em;
+  left: 0;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.container-fluid a:hover {
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 .dark {
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.footer {
-  margin-top: 50px;
 }
 
 .green-text {
@@ -65,13 +73,49 @@ body, .jumbotron {
 
 .grid {
   height: 100vh;
+  left: 0;
   position: absolute;
+  right: 0;
   width: 100%;
   top: 0;
 }
 
+figcaption {
+  padding-left: 5px;
+}
+
+figure {
+  float: left;
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  width: 292px;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+img {
+  width: 290px;
+}
+
 .jumbotron {
-  vertical-align: middle;
+  background-color: rgba(238, 238, 238, 0.7);
+  border-radius: 4px;
+  color: $dark-gray;
+  margin-top: 18vh;
+  max-width: $narrow;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 3px;
+}
+
+.jumbotron h1{
+  font-size: 85px;
+  font-weight: 700;
+}
+
+.jumbotron p {
+  font-size: 35px;
 }
 
 .light {
@@ -79,47 +123,7 @@ body, .jumbotron {
 }
 
 .link-icons {
-  font-size: 7em;
-}
-
-#masthead {
-  height: 100vh;
-  margin-bottom: 30px;
-  position: relative;
-  z-index: 3;
-}
-
-#masthead a {
-  background: transparent;
-  bottom: 0;
-  font-size: 1.3em;
-  left: 0;
-  padding: 5px;
-  position: absolute;
-  right: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-#masthead a:hover {
-  background-color: rgba(0, 0, 0, 0.45);
-}
-
-#masthead .jumbotron {
-  background-color: rgba(238, 238, 238, 0.7);
-  border-radius: 4px;
-  color: $dark-gray;
-  margin-top: 20vh;
-  max-width: $narrow;
-}
-
-#masthead .jumbotron h1 {
-  font-size: 85px;
-  font-weight: 700;
-}
-
-#masthead .jumbotron p {
-  font-size: 35px;
+  font-size: 150px;
 }
 
 .orange-text {
@@ -151,11 +155,11 @@ body, .jumbotron {
 }
 
 .tile {
-  border: solid $white;
+  border: solid rgba(255, 255, 255, 0.2);
   border-bottom: 0px;
-  border-top-width: 1px;
   border-left-width: 1px;
   border-right: 0px;
+  border-top-width: 1px;
   float: left;
   height: 10vh;
   position: relative;
