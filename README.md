@@ -1,6 +1,6 @@
 # My personal website
 
-This is my professional website for marketing myself as a software engineering student. On it, you'll find links to my resume and various relevant social media accounts.
+This is my professional website for marketing myself as a software engineering student. On it, you'll find various relevant social media links.
 
 I made this site from scratch using Jekyll, HTML, CSS, JavaScript, minimal jQuery and the Bootstrap library.
 
